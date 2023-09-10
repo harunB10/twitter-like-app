@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  padding: 20px;
+}
+
+.tweets{
+  display: inline-block;
+}
+
+.tweet {
+  margin: 0 auto;
+  min-width: 480px;
+  max-width: 640px;
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  font-size: 1.1rem;
+  line-height: 18px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  line-height: 1.4rem;
+}
+
+.more {
+  margin-left: 20px;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-right: 0.3em;
+}
+
+.handle {
+  color: #536471;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.timestamp {
+  color: #536471;
+  font-size: 1.1rem;
+}
+
+.timestamp::before {
+  content: "·";
+  padding-right: 0.3em;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.message {
+  text-align: left;
+  font-stretch: 100%;
+  font-weight: 400;
+  line-height: 1.6rem;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.actions {
+  padding: 5px 5px;
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+  color: #536471;
+}
+
+.r-og9te1 {
+  max-width: 40px;
+}
+
+.r-f9ja8p {
+  max-height: 20px;
+}
+.r-1cvl2hr {
+  color: rgb(29, 155, 240);
+}
+.r-9cviqr {
+  margin-left: 2px;
+}
+.r-lrvibr {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.r-1plcrui {
+  vertical-align: text-bottom;
+}
+.r-bnwqim {
+  position: relative;
+}
+.r-1xvli5t {
+  height: 1.25em;
+}
+.r-yyyyoo {
+  fill: currentcolor;
+}
+.r-4qtqp9 {
+  display: inline-block;
+}
+
+/* Tabs container */
+.tabs {
+  display: flex;
+  background-color: #ffffff;
+  min-width: 502px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Individual tab button */
+.tab {
+  flex: 1;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent; /* Make the background transparent */
+  border: none;
+  outline: none;
+  transition: text-decoration-color 0.2s; /* Use text-decoration-color for the underline color */
+  text-decoration-line: underline; /* Initially set text-decoration to underline */
+  text-decoration-color: transparent; /* Initially set underline color to transparent */
+  color: #000; /* Set the text color */
+  text-decoration-thickness: 4px;
+}
+
+/* Active tab button */
+.tab.active {
+  text-decoration-color: #007bff; /* Change the underline color for the active tab */
+}
+
+/* Hover effect for tab buttons */
+.tab:hover {
+  background-color: #eaeaea82;
+}
+
+#counter-value{
+  height: 30px;
+  min-width: 120px;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.187);
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counterTop
+{
+  display: table-cell;
+  position: fixed;
+}
+
+.filledHeart
+{
+  color: red;
+}
+
