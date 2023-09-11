@@ -42,10 +42,11 @@ function App() {
     );
   };
 
-  const handleClearTweets = () => {
-    setTweetList([]); // Clear all tweets
-    setLikeCounter(0); // Reset the like counter
-    setLikedTweets([]); // Clear liked tweets
+  const handleClearTweets = (): void => {
+    // clear all states
+    setTweetList([]);
+    setLikeCounter(0);
+    setLikedTweets([]);
   };
 
   const handleTabChange = (tab: string) => {
