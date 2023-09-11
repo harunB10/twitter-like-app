@@ -1,12 +1,8 @@
 interface MessageProps {
-    message: string;
-  }
-
-function Message (props: MessageProps) 
-{
-    return (
-        <p className="message"> {props.message} </p>
-    )
+  message: string;
+}
+const Message: React.FC<MessageProps> = (props) => {
+  return <p className="message"> {props.message} </p>;
 }
 
-export default Message
+export default Message;

@@ -1,9 +1,8 @@
 interface TimestampProps {
-    timestamp: number;
-  }
+  timestamp: number;
+}
 
 function Timestamp({ timestamp }: TimestampProps) {
-
   const formatTwitterLikeDate = (milliseconds: number): string => {
     const now = new Date().getTime();
     const diff = now - milliseconds;
