@@ -42,6 +42,12 @@ function App() {
     );
   };
 
+  const handleClearTweets = () => {
+    setTweetList([]); // Clear all tweets
+    setLikeCounter(0); // Reset the like counter
+    setLikedTweets([]); // Clear liked tweets
+  };
+
   const handleTabChange = (tab: string) => {
     setActiveTab(tab);
   };
@@ -108,6 +114,11 @@ function App() {
           isLiked={likedTweets.includes(tweet.id)}
         />
       ))}
+      {tweetList.length > 0 && ( // Conditionally render the button if there are tweets
+          <button onClick={handleClearTweets} className="clearButton">
+            Clear Tweets
+          </button>
+        )}
     </>
   );
 }

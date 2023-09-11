@@ -127,10 +127,14 @@ body {
 
 /* Tabs container */
 .tabs {
+  margin: 0 auto;
+  min-width: 480px;
+  max-width: 640px;
+  padding: 10px;
+  border: 1px solid #ccc;
   display: flex;
-  background-color: #ffffff;
-  min-width: 502px;
-  border-bottom: 1px solid #ccc;
+  font-size: 1.1rem;
+  line-height: 18px;
 }
 
 /* Individual tab button */
@@ -180,5 +184,20 @@ body {
 .filledHeart
 {
   color: red;
+}
+
+.clearButton {
+  background-color: #ff5050; /* Red background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Add padding to the button */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Add pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.clearButton:hover {
+  background-color: #ff3333; /* Darker red color on hover */
 }
 
