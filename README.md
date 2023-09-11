@@ -14,7 +14,7 @@ Before you begin, ensure you have the following installed on your machine:
 1. Clone this repository to your local machine:
 
    ```shell
-   git clone https://github.com/yourusername/your-project.git
+   git clone https://github.com/harunB10/twitter-like-app.git
    ```
 2. Install packages and dependencies
 
