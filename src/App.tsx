@@ -114,7 +114,7 @@ function App() {
           isLiked={likedTweets.includes(tweet.id)}
         />
       ))}
-      {tweetList.length > 0 && ( // Conditionally render the button if there are tweets
+      {tweetList.length > 0 && (
           <button onClick={handleClearTweets} className="clearButton">
             Clear Tweets
           </button>
