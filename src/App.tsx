@@ -7,17 +7,14 @@ import Tweet from "./components/Tweet";
 import Tabs from "./components/Tabs";
 import { v4 as uuidv4 } from "uuid";
 
-type Tweet = {
-  account: string;
-  timestamp: number;
-  content: string;
-  id: string;
-};
-
 type ObservableType = {
   account: string;
   timestamp: number;
   content: string;
+};
+
+export type Tweet  = ObservableType & {
+  id: string;
 };
 
 type LikedTweets = string[];

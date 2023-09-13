@@ -4,14 +4,10 @@ import User from "./User";
 import Timestamp from "./Timestamp";
 import { BsHeartFill, BsHeart } from "react-icons/bs";
 import Message from "./Message";
+import {Tweet as TweetType} from '../App'
 
 interface TweetProps {
-  tweet: {
-    account: string;
-    timestamp: number;
-    content: string;
-    id: string;
-  };
+  tweet: TweetType
   handleLikeToggle: (tweetId: string) => void;
   isLiked: boolean;
 }
